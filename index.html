@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Full Stack Project</title>
+    <title>Food Planner - Main Menu</title>
+    <style>
+      :root { --accent: #0078d4; }
+      html, body { height: 100%; margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background: #fff; color: #111; }
+      header { font-size: 7rem; text-align: left; padding: 2.5rem 1rem; font-weight: 700; }
+      main { height: calc(100vh - 120px); display: flex; align-items: center; justify-content: center; }
+      .continue-btn {
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-size: 1.25rem;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(0,120,212,0.12);
+        transition: transform .08s ease, box-shadow .08s ease;
+      }
+      .continue-btn:active { transform: translateY(1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    </style>
   </head>
   <body>
-    <!-- You code goes here-->
+    <header>Welcome To the Food Planner</header>
+    <main>
+      <button class="continue-btn" id="continueBtn">Continue</button>
+    </main>
+    <script>
+      document.getElementById('continueBtn').addEventListener('click', function () {
+        // adjust target as needed
+        window.location.href = 'dashboard.html';
+      });
+    </script>
   </body>
 </html>
