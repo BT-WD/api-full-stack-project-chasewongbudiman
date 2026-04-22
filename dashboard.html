@@ -65,7 +65,7 @@
             <div class="muted">${m.strCategory || ''}${m.strArea ? ' • ' + m.strArea : ''}</div>
           `;
           div.addEventListener('click', () => {
-            window.open('https://www.themealdb.com/meal.php?c=${m.idMeal}', '_blank');
+            window.open(`https://www.themealdb.com/meal.php?c=${m.idMeal}`, '_blank');
           });
           frag.appendChild(div);
         });
